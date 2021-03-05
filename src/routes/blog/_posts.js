@@ -90,3 +90,14 @@ posts.forEach(post => {
 });
 
 export default posts;
+
+
+export async function getPostsAsync() {
+
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve(posts)
+		}, 10000);
+	})
+
+}
